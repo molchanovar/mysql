@@ -1,10 +1,23 @@
 # mysql
-Master_slave_config
+### AutoDeploy Master-Slave Percona configuration 
 
 `cat ~/.mysql_history` - просмотр истории запросов Mysql
 `SELECT user FROM mysql.user;` - просмотр созданных пользователей
+`show variables;` - вся настроичная таблица (все настройки)
+`show status;` - # метрики (для анализа - что происходит ?)
 
-### Настройка реплики (GTID - как минимум одна реплика должна записать транзакцию в журнал, прежде чем та будет признана успешной)
+- FUI cmd:
+```
+show databases; 
+use <databases_name>;
+show tables; 
+select * from <table_name>;
+```
+
+### ACID ?  
+### MVCC ?
+
+#### Настройка реплики (GTID - как минимум одна реплика должна записать транзакцию в журнал, прежде чем та будет признана успешной)
 Установка Percona (CentOS 7): 
 ```
 yum install https://repo.percona.com/yum/percona-release-latest.noarch.rpm -y
