@@ -1,4 +1,8 @@
 # mysql
+
+Master/replica autodeployment
+
+
 ### AutoDeploy Master-Slave Percona configuration 
 
 `cat ~/.mysql_history` - просмотр истории запросов Mysql
